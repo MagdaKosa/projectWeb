@@ -3,77 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Refleksologia, Strefa Regeneracji Organizmu.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria Flexbox</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #082567;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        .wrap {
-            width: 100%;
-            height: 100vh;
-            background-color: #082567;
-        }
-
-        .webCreated {
-            font-family: 'Saira', sans-serif;
-            font-weight: 300;
-            text-transform: uppercase;
-            font-size: 20px;
-            /* text-shadow: 0 2px 0 grey,
-                0 3px 0 #AAA,
-                0 3px 4px #AAA; */
-            color: white;
+        h1 {
+            flex-basis: 10vh;
             text-align: center;
-        }
-
-        .hammer {
-            width: 100%;
-            text-align: center;
-        }
-
-        .fa-hammer {
-            font-size: 60px;
-            margin-top: 10vh;
-            margin-bottom: 5%;
+            line-height: 10vh;
+            background-color: #082567;
             color: white;
+            font-family: sans-serif;
         }
 
-        .hammer i {
-            animation: rotate .3s ease infinite both alternate;
+        section {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
         }
 
-        @keyframes rotate {
-            0% {
-                transform: rotate(30deg);
+        section>div {
+            flex-basis: 21%;
+        }
+
+        section div img {
+            width: 100%;
+        }
+
+        @media (max-width: 1200px) {
+            section>div {
+                flex-basis: 50%;
+                padding: 50px;
             }
+        }
 
-            100% {
-                transform: rotate(-30deg);
+        @media (max-width: 1024px) {
+            section>div {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            section>div {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 460px) {
+            section>div {
+                flex-basis: 100%;
             }
         }
     </style>
-
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="hammer">
-            <i class="fas fa-hammer"></i>
-        </div>
-        <div class="info">
-            <p class="webCreated">Podstrona w budowie.</p>
-            <p class="webCreated">Dziękujemy za cierpliwość i do zobaczenia.</p>
-            <p class="webCreated">Aktualne zdjęcia znajdziesz tutaj: https://g.page/refleksoterapialodz?share </p>
-        </div>
-    </div>
+    <h1>GALERIA</h1>
+    <section>
 
+        <div>
+            <img src="img/foto1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/foto2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/foto3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/foto4.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="img/foto5.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/foto6.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/foto7.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/foto8.jpg" alt="">
+        </div>
+    </section>
 </body>
 
 </html>
