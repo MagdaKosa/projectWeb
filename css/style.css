@@ -1,0 +1,2326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+
+
+body {
+  max-width: 1920px;
+}
+
+/* HEADER */
+
+header {
+  position: absolute;
+  height: 100vh;
+  /* max-width: 1920px; */
+  max-width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+nav.top {
+  position: absolute;
+  height: 100vh;
+  /* max-width: 1920px; */
+  max-width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+header img.baner {
+  height: 100vh;
+  z-index: -1;
+}
+
+header img.logo {
+  position: absolute;
+  top: 3%;
+  left: 4%;
+  width: 29,905px;
+  height: 63px;
+}
+
+/* header.text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 50px;
+  height: 60px;
+  background-color: yellow;
+  z-index: 2;
+  color: orange;
+} */
+
+p.text1 {
+  position: absolute;
+  color: white;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  /* text-shadow: 0 2px 0 grey,
+    0 3px 0 #AAA,
+    0 3px 4px #AAA; */
+}
+
+p.text2 {
+  position: absolute;
+  color: white;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p.text3 {
+  position: absolute;
+  color: white;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 900px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p.text4 {
+  position: absolute;
+  color: white;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 900px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p.text5 {
+  display: none;
+}
+
+header button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, 0);
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+  line-height: 40px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: white;
+  border: white solid 0.05px;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+button:hover {
+  color: greenyellow;
+  background-color: transparent;
+  border: 2px solid greenyellow;
+  cursor: pointer;
+}
+
+.wrapper {
+  position: relative;
+}
+
+div.burger {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  line-height: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+header div.burger:hover {
+  cursor: pointer;
+}
+
+div.arrow {
+  position: fixed;
+  z-index: 100;
+  top: 200vh;
+  height: 20px;
+  right: 10%;
+  left: 30%;
+  line-height: 40px;
+  font-size: 40px;
+  color: black;
+}
+
+header.menu {
+  padding-left: 100vw;=
+}
+
+/* .nav {
+  display: none;
+} */
+
+.show {
+  display: block;
+}
+
+.menu {
+  left: 0;
+}
+
+
+aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100vw;
+  background-color: #082567;
+  width: 100vw;
+  /* opacity: 50%; */
+  transition: 0.3s linear;
+}
+
+nav.mobile {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav.mobile ul {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.mobile a {
+  display: block;
+  padding: 0 5px 0 10px;
+  font-style: arial, sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+
+}
+
+nav.mobile a:hover i {
+  margin-left: 20px;
+}
+
+/* nav.desktop {
+  display: none;
+} */
+
+/* nav.desktop {
+  display: absolute;
+  padding: 20px;
+  height: 10vh;
+  width: 300px;
+  color: white;
+}
+
+nav.desktop a {
+  flex-grow: 1;
+  font-family: arial;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+} */
+
+/* Section MISSON */
+
+.main {
+  width: 100%;
+  /* height: 100vh; */
+  position: relative;
+}
+
+section {
+  position: absolute;
+  /* height: 170vh; */
+  width: 100%;
+  /* top: 100vh; */
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+section.myMission {
+  top: 100vh;
+}
+
+section.offers {
+  top: 205vh;
+  height: 255vh;
+}
+
+section.price {
+  top: 445vh;
+  /* top: 440vh; */
+  height: 100vh;
+}
+
+section.contact {
+  top: 555vh;
+  color: black;
+  height: 168vh;
+}
+
+.squer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.item {
+  position: absolute;
+  width: 30vh;
+  height: 30vh;
+  /* background-color: greenyellow; */
+  background-color: #082567;
+  border: 1px solid white;
+  color: white;
+  transform: rotate(45deg);
+}
+
+.first {
+  width: 50vh;
+  height: 50vh;
+  top: 12%;
+  left: -25%;
+  /* background-color: #00CCFF; */
+  background-color: #082567;
+  color: black;
+}
+
+.first:hover {
+  transition: all 3s;
+}
+.second:hover {
+  transition: all 3s;
+}
+.third:hover {
+  transition: all 3s;
+}
+.fourth:hover {
+  transition: all 3s;
+}
+
+/*.item p:hover .item {
+  background-color: white;
+  color: #082567;
+  transition: all 3s;
+}  */
+/* https://stackoverflow.com/questions/9311116/can-css3-transition-font-size */
+.second {
+  top: 5%;
+  left: 45%;
+  /* background-color: greenyellow; */
+   background-color: #082567;
+}
+
+.third {
+  top: 59%;
+  left: 18%;
+  /* background-color: #f100c5; */
+  background-color: #082567;
+  z-index: 2;
+}
+
+.fourth {
+  top: 35%;
+  left: 45%;
+  /* background-color: rgb(255, 208, 0); */
+  background-color: #082567;
+  color: black;
+}
+
+.item p {
+  transform: rotate(-45deg);
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: 808080;
+
+}
+
+p.pain {
+  padding-left: 40%;
+  padding-right: 20%;
+  font-weight: 700;
+  /* opacity: 60%; */
+  color: white;
+}
+
+p.method {
+  padding-top: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-weight: 700;
+  color: white;
+}
+
+p.life {
+  padding-top: 5%;
+  padding-left: 3%;
+  font-weight: 700;
+  color: white;
+}
+
+p.reduction {
+  padding-left: 20%;
+  padding-right: 25%;
+  font-weight: 700;
+  /* opacity: 60%; */
+  color: white;
+}
+
+
+h1 {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  /* color: #808080; */
+  color: #082567;
+}
+
+h1.mission {
+  padding: 0 20px 20px 20px;
+}
+
+
+h2 {
+  font-family: 'Saira', sans-serif;
+  font-weight: 700;
+  padding: 1%;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #082567;
+  margin-top: 3%;
+}
+
+p.description {
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  /* color: #808080; */
+  color: #082567;
+  text-align: center;
+  padding: 3% 11% 3% 11%;
+}
+
+p.name {
+  font-weight: 700;
+  color: white;
+}
+
+p.duration {
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  /* color: black; */
+  color: #082567;
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+p.duration_padding {
+  padding: 0;
+  font-size: 14px;
+  color: #082567;
+}
+
+.contact {
+  width: 100%;
+}
+
+p.phone {
+  padding: 0;
+}
+
+p.info {
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.phoneNumber {
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  border: white solid 4px;
+  padding: 5px 20px 5px 20px;
+}
+
+h1.contact {
+  color: white;
+}
+
+p.contact {
+  color: white;
+}
+
+.phoneNumber:hover {
+  color: greenyellow;
+  /* background-color: #f100c5; */
+}
+
+.treatment {
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.fa-spa {
+  /* color:  #00CCFF; */
+  color: #082567;
+  animation: move 2s infinite linear;
+}
+
+@keyframes move {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotateY(3.142rad);
+  }
+}
+
+.fa-chart-pie {
+  /* color: greenyellow; */
+  color: #082567;
+  animation: obrot 5s infinite linear;
+}
+
+@keyframes obrot {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(-360deg);
+      /* transform: rotateZ(3.142rad); */
+  }
+}
+
+.fa-procedures {
+  /* color: #f100c5; */
+  color: #082567;
+  animation: fly 1s infinite linear alternate;
+}
+
+@keyframes fly {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: translateX(10px);
+  }
+}
+
+p button a {
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #082567;
+  font-size: 16px;
+}
+
+.buttonOffer {
+  margin-top: 10px;
+  border: none;
+}
+
+.reflexology {
+  background-color:#082567;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.kesh {
+  background-color: #082567;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  background-color: #082567;
+}
+
+.nColor {
+  color: white;
+  background-color: #082567;
+}
+
+.iColor {
+  color: white;
+  background-color: #082567;
+}
+
+.kColor {
+  color: white;
+  background-color: #082567;
+}
+
+.phoneContact {
+  background-color: #082567;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5%;
+  color: white;
+  padding-bottom: 20px;
+  /* opacity: 70%; */
+}
+
+.borderMaps {
+  width: 90%;
+  margin: 0 auto;
+  border: #082567 solid 0.05px;
+  padding-bottom: 20px;
+  height: 300px;
+}
+
+.maps {
+  margin: 5px;
+}
+
+.author {
+  width: 90%;
+  margin: 0 auto;
+  height: 40px;
+  text-align: center;
+}
+
+/* XM */
+
+@media (orientation: portrait) and (min-width: 360px) {
+  /* QHEADER */
+  p.text1 {
+    top: 5%;
+  }
+
+  p.text2,
+  p.text3,
+  p.text4 {
+    font-size: 50px;
+  }
+
+  p.text3 {
+  top: 38%;
+  }
+
+  p.text4 {
+    top: 50%;
+  }
+
+  /* QMISJA */
+  .item p {
+    font-weight: 300;
+    font-size: 17px;
+  }
+
+.first {
+    width: 50vh;
+    height: 50vh;
+    top: 12%;
+    left: -15%;
+  }
+
+  p.pain {
+    padding-left: 25%;
+    padding-right: 47%;
+    font-weight: 700;
+  }
+
+  .second {
+    top: 5%;
+    left: 44%;
+  }
+
+  p.method {
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 30%;
+    font-weight: 700;
+  }
+
+  .fourth {
+    top: 35%;
+    left: 45%;
+  }
+
+  p.reduction {
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 30%;
+    font-weight: 700;
+  }
+
+  .third {
+    top: 60%;
+    left: 18%;
+    /* z-index: 2; */
+  }
+
+  p.life {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 30%;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 21px
+  }
+
+  /* QOFERTA */
+
+  section.offers {
+    top: 210vh;
+    height: 253vh;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p.description {
+    font-size: 17px;
+  }
+
+
+  p button a {
+    font-size: 17px;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 410vh;
+  }
+
+  p.duration {
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+  
+  p.duration_padding {
+    padding: 0 5%;
+    font-size: 17px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 515vh;
+    height: 145vh;
+  }
+
+  p.name {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  iframe {
+    width:313px;
+  }
+}
+
+/* XM410 */
+
+@media (orientation: portrait) and (min-width: 410px) {
+  /* QHEADER */
+  p.text1 {
+    top: 5%;
+    left: 37%
+  }
+
+  p.text2,
+  p.text3,
+  p.text4 {
+    font-size: 50px;
+  }
+
+  p.text3 {
+  top: 38%;
+  }
+
+  p.text4 {
+    top: 50%;
+  }
+
+  header button {
+    line-height: 50px;
+    padding: 0 25px;
+    font-size: 25px;
+  }
+  
+  nav.mobile a {
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  /* QMISJA */
+  .item p {
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+.first {
+    left: -15%;
+  }
+
+  .second {
+    left: 44%;
+  }
+
+  p.method {
+    padding-left: 5%;
+    padding-right: 30%;
+  }
+
+  .fourth {
+    left: 45%;
+  }
+
+  .third {
+    top: 60%;
+    left: 18%;
+    z-index: 2;
+  }
+
+  p.life {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 30%;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 23px
+  }
+
+  /* QOFERTA */
+
+  section.offers {
+    top: 210vh;
+    height: 253vh;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p.description {
+    font-size: 19px;
+  }
+
+  p button a {
+    font-size: 19px;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 406vh;
+  }
+
+  p.duration {
+    font-size: 15px;
+  }
+  
+  p.duration_padding {
+    font-size: 19px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 510vh;
+    height: 135vh;
+  }
+
+  p.name {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  iframe {
+    width:360px;
+    text-align: center;
+  }
+}
+
+/* XM480 */
+
+@media (orientation: portrait) and (min-width: 479px) {
+  /* QHEADER */
+  p.text1 {
+    top: 5%;
+    left: 35%
+  }
+
+  p.text2,
+  p.text3,
+  p.text4 {
+    font-size: 60px;
+  }
+
+  p.text3 {
+  top: 38%;
+  }
+
+  p.text4 {
+    top: 50%;
+  }
+
+  header button {
+    line-height: 60px;
+    padding: 0 25px;
+    font-size: 30px;
+  }
+  
+  nav.mobile a {
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  /* QMISJA */
+
+.first {
+    width: 50vh;
+    height: 50vh;
+    top: 12%;
+    left: 0;
+    /* background-color: #00CCFF;
+    color: white; */
+  }
+
+  p.pain {
+    padding-left: 30%;
+    padding-right: 40%;
+    /* font-weight: 700; */
+  }
+
+  .second {
+    top: 5%;
+    left: 55%;
+    /* background-color: greenyellow; */
+    z-index: 3;
+  }
+
+  p.method {
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-right: 25%;
+    /* font-weight: 700; */
+  }
+
+  .fourth {
+    top: 35%;
+    left: 50%;
+    /* color: white; */
+  }
+
+  p.reduction {
+    padding-top: 7%;
+    padding-left: 5%;
+    /* padding-right: 30%;
+    font-weight: 700;
+    color: white; */
+  }
+
+  .third {
+    top: 60%;
+    left: 28%;
+    /* background-color: yellow; */
+    z-index: 2;
+  }
+
+  p.life {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 30%;
+    /* font-weight: 700; */
+  }
+
+  h1 {
+    font-size: 23px
+  }
+
+  /* QOFERTA */
+
+  section.offers {
+    /* top: 200vh; */
+    top: 210vh;
+    /* height: 223vh; */
+    height: 253vh;
+    /* background-color: lightyellow; */
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p.description {
+    font-size: 19px;
+  }
+
+  p button a {
+    font-size: 19px;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 406vh;
+  }
+
+  p.duration {
+    font-size: 15px;
+  }
+  
+  p.duration_padding {
+    font-size: 19px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 515vh;
+    height: 140vh;
+  }
+
+  p.name {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  iframe {
+    width:423px;
+  }
+}
+
+/* XM560 */
+
+@media (orientation: portrait) and (min-width: 559px) {
+ 
+  header button {
+    width: 47%;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 30px;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 400vh;
+    height: 120vh;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 515vh;
+    height: 140vh;
+  }
+
+  p.name {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  iframe {
+    width:495px;
+  }
+}
+
+/* XM768 */
+@media (orientation: portrait) and (min-width: 767px) {
+  /* QHEADER */
+  p.text1 {
+    left: 22%;
+  }
+
+  p.text2,
+  p.text3,
+  p.text4 {
+    font-size: 75px;
+  }
+
+
+  header button {
+    width: 50%;
+    line-height: 75px;
+    padding: 0 25px;
+    font-size: 45px;
+  }
+
+  div.burger {
+    line-height: 40px;
+    font-size: 40px;
+  }
+
+  /* QMISJA */
+
+  p.pain {
+    font-size: 25px;
+  }
+
+
+  p.method {
+    font-size: 25px;
+  }
+
+  p.reduction {
+    padding-top: 20%;
+    padding-left: 20%;
+    font-size: 25px;
+  }
+
+  p.life {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  /* QOFERTA */
+
+  section.offers {
+    /* top: 200vh; */
+    top: 210vh;
+    /* height: 223vh; */
+    height: 253vh;
+    /* background-color: lightyellow; */
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p.description {
+    font-size: 25px;
+  }
+
+  p button a {
+    font-size: 25px;
+  }
+
+  .fa-spa {
+    font-size: 75px;
+  }
+  
+  .fa-chart-pie {
+    font-size: 75px;
+  }
+  
+  .fa-procedures {
+    font-size: 75px;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 380vh;
+  }
+
+  p.duration {
+    font-size: 20px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 480vh;
+    height: 105vh;
+  }
+
+  iframe {
+    width: 683px;
+  }
+
+  .author {
+    font-size: 20px;
+  }
+}
+/* XMlandscape 640 */
+
+@media (orientation: landscape) and (min-width: 639px) {
+  /* QHEADER */
+  p.text1 {
+    top: 8%;
+    left: 25%;
+  }
+
+  p.text2,
+  p.text3,
+  p.text4 {
+    font-size: 40px;
+  }
+
+  p.text2 {
+    top: 38%;
+    left: 15%;
+    }
+
+  p.text3 {
+  top: 38%;
+  left: 43%;
+  }
+
+  p.text4 {
+    top: 38%;
+    left: 78%;
+  }
+
+  header button {
+    width: 40%;
+    line-height: 45px;
+    padding: 0 10px;
+    font-size: 25px;
+  }
+
+  div.burger {
+    line-height: 40px;
+    font-size: 40px;
+  }
+
+  /* QMISJA */
+
+  section.myMission {
+    height: 200vw;
+  }
+  .item p {
+    transform: rotate(-45deg);
+    font-family: 'Saira', sans-serif;
+    font-size: 17px;
+    color: 808080;
+  }
+
+.first {
+    width: 50vw;
+    height: 50vw;
+    top: 12%;
+    left: 5%;
+  }
+
+  p.pain {
+    padding-left: 25%;
+    padding-right: 47%;
+  }
+
+  .second {
+    width: 33vw;
+    height: 33vw;
+    top: 5%;
+    left: 54%;
+  }
+
+  p.method {
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 30%;
+    text-align: center;
+  }
+
+  .fourth {
+    width: 33vw;
+    height: 33vw;
+    top: 60%;
+    left: 55%;
+  }
+
+  p.reduction {
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 30%;
+    text-align: center;
+  }
+
+  .third {
+    width: 33vw;
+    height: 33vw;
+    top: 90%;
+    left: 28%;
+  }
+
+  p.life {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 30%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 21px
+  }
+
+  /* QOFERTA */
+
+  section.offers {
+    top: 280vh;
+    height: 290vh;
+  }
+
+  /* QPRICE */
+  section.price {
+    top: 580vh;
+    height: 430vh;
+  }
+
+  p.duration {
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #082567;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+  
+  p.duration_padding {
+    padding: 0 5%;
+    font-size: 17px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 780vh;
+    height: 260vh;
+  }
+
+  p.name {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  iframe {
+    width:565px;
+  }
+}
+/* TU */
+
+/* XMlandscape 700 */
+
+@media (orientation: landscape) and (min-width: 699px) {
+  /* QHEADER */
+
+  p.text2 {
+    left: 20%;
+    }
+
+  p.text3 {
+  left: 45%;
+  }
+
+  p.text4 {
+    left: 76%;
+  }
+
+  /* QMISJA */
+
+  p.pain {
+    padding-left: 39%;
+    padding-right: 32%;
+  }
+
+  .item p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .fourth {
+    top: 57%;
+    left: 46%;
+  }
+
+  .third {
+    top: 90%;
+    left: 26%;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 510vh;
+    height: 320vh;
+  }
+
+  p.duration {
+    font-size: 18px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 680vh;
+    height: 190vh;
+  }
+
+  iframe {
+    width: 620px;
+  }
+
+}
+
+/* XMlandscape 731 */
+
+@media (orientation: landscape) and (min-width: 730px) {
+  /* QHEADER */
+
+  p.text2 {
+    left: 20%;
+    }
+
+  p.text3 {
+  left: 45%;
+  }
+
+  p.text4 {
+    left: 76%;
+  }
+
+  /* QMISJA */
+
+  .item p {
+    font-size: 19px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  /* QOFERTA */
+
+  section.offers {
+    top: 280vh;
+    height: 390vh;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p.description {
+    font-size: 20px;
+  }
+
+  p button a {
+    font-size: 25px;
+  }
+
+  .fa-spa {
+    font-size: 75px;
+  }
+  
+  .fa-chart-pie {
+    font-size: 75px;
+  }
+  
+  .fa-procedures {
+    font-size: 75px;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 630vh;
+    height: 320vh;
+  }
+
+  p.duration {
+    font-size: 18px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 810vh;
+    height: 245vh;
+  }
+
+  iframe {
+    width: 650px;
+  }
+
+  .author {
+    font-size: 20px;
+  }
+}
+
+/* TU */
+
+
+/* XMlandscape 1024x600 */
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  /* QHEADER */
+
+  /* p.text1 {
+    top: 6%;
+    left: 18%;
+    }
+
+  p.text2 {
+    left: 20%;
+    }
+
+  p.text3 {
+  left: 45%;
+  }
+
+  p.text4 {
+    left: 76%;
+  } */
+
+  /* QMISJA */
+
+  .item p {
+    font-size: 19px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  /* QOFERTA */
+
+  section.offers {
+    top: 280vh;
+    height: 390vh;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p.description {
+    font-size: 20px;
+  }
+
+  p button a {
+    font-size: 25px;
+  }
+
+  .fa-spa {
+    font-size: 75px;
+  }
+  
+  .fa-chart-pie {
+    font-size: 75px;
+  }
+  
+  .fa-procedures {
+    font-size: 75px;
+  }
+  
+  /* QCENNIK */
+
+  section.price {
+    top: 630vh;
+    height: 220vh;
+  }
+
+  p.duration {
+    font-size: 18px;
+  }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 810vh;
+    height: 115vh;
+  }
+
+  iframe {
+    width: 650px;
+  }
+
+  .author {
+    font-size: 20px;
+  }
+}
+
+
+@media (orientation: landscape) and (min-width: 1023px) {
+  .burger {
+      display: none;
+  }
+
+  p.text2, p.text3, p.text4 {
+    display: none;
+}
+
+p.text1 {
+  top: 6%;
+  left: 18%;
+  }
+
+p.text2 {
+  left: 20%;
+  }
+
+p.text3 {
+left: 45%;
+}
+
+p.text4 {
+  left: 76%;
+}
+
+p.text5 {
+  position: absolute;
+  display: inline;
+  color: white;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 100%;
+  /* height: 60px; */
+  font-size: 68px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+  nav.desktop {
+    position: absolute;
+    color: white;
+    top: 7%;
+    left: 37%;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+nav.desktop ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav.desktop li {
+  flex-basis: 10%;
+}
+
+nav.desktop a {
+    flex-grow: 1;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav.desktop a:hover {
+    color: greenyellow;
+    transition: 0.3s;
+}
+
+
+header img.logo {
+  height: 100px;
+}
+
+
+p.text1 {
+  top: 10%;
+  left: 21%;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header button {
+  width: 30%;
+  line-height: 50px;
+  padding: 0 10px;
+  font-size: 30px;
+}
+/* MISJA  */
+
+
+.squer .item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #082567;
+  /* transition: 0.5s; */
+}
+
+.squer .item:nth-of-type(1):hover {
+  background-image: url(../images/pain1.jpg);
+  /* background-color: rgba(192, 192, 192, 1); */
+}
+
+.squer .item:nth-of-type(2):hover {
+  background-image: url(../images/green1.jpg);
+
+}
+
+.squer .item:nth-of-type(3):hover {
+  background-image: url(../images/life1.jpg);
+}
+
+.squer .item:nth-of-type(4):hover {
+  background-image: url(../images/reduction1.jpg);
+}
+
+.item {
+  width: 50vh;
+  height: 50vh;
+}
+
+.first {
+  width: 60vh;
+  height: 60vh;
+  top: 25%;
+  left: -5%;
+}
+
+.second {
+  top: 15%;
+  left: 35%;
+}
+
+.third {
+  top: 26%;
+  left: 70%;
+}
+
+.fourth {
+  top: 55%;
+  left: 45.5%;
+}
+
+
+p.method {
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 40%;
+}
+
+p.life {
+  padding-top: 15%;
+  padding-left: 0;
+}
+
+p.reduction {
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 35%;
+}
+
+  /* QOFERTA */
+
+  section.offers {
+    top: 240vh;
+    height: 390vh;
+  }
+
+  /* QCENNIK */
+
+  section.price {
+    top: 490vh;
+    /* height: 320vh; */
+  }
+
+    /* QCONTACT */
+
+    section.contact {
+      top: 650vh;
+      height: 110vhvh;
+    }
+
+    .contacts {
+      display: flex;
+      align-items: stretch;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .phoneContact {
+      height: 90vh;
+      flex-grow: 0;
+      flex-basis: 45%;
+      margin-left: 5%;
+    }
+    
+    .borderMaps {
+      flex-basis: 45%;
+      height: 90vh;
+      margin-top: 5%; 
+      margin-right: 5%;
+    }
+    
+    .maps {
+      margin: 5px;
+      text-align: center;
+      /* margin: auto auto; */
+    }
+
+    iframe {
+      height: 80vh;
+      width: 400px;
+      margin-top: 5%;
+    }
+    
+    .author {
+      width: 90%;
+      margin: 0 auto;
+      height: 40px;
+      text-align: center;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1200px) {
+  /* HEADER */
+
+  header button {
+    width: 24%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  /* MISJA */
+  p.pain {
+    font-size: 23px;
+  }
+
+  .squer .item:nth-of-type(1):hover {
+    background-image: url(../images/pain3.jpg);
+  }
+
+  p.method {
+    font-size: 23px;
+    padding-left: 12%;
+    padding-right: 40%;
+  }
+  
+  p.life {
+    font-size: 23px;
+  }
+  
+  p.reduction {
+    font-size: 23px;
+  }
+
+  /* OFERTA */
+
+    /* QOFERTA */
+
+    section.offers {
+      top: 230vh;
+      height: 200vh;
+    }
+
+     /* QCENNIK */
+
+  section.price {
+    top: 440vh;
+    /* height: 320vh; */
+  }
+
+    .duration_padding {
+      margin-top: 2%;
+      text-transform: uppercase;
+    }
+
+    section.contact {
+      top: 600vh;
+      height: 110vhvh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1365px) {
+
+  /* HEADER */
+
+p.text1 {
+top: 8%;
+left: 17%;
+font-size: 32px;
+}
+
+p.text5 {
+top: 35%;
+font-size: 75px;
+}
+
+nav.desktop a {
+  font-size: 23px;
+}
+
+header img.logo {
+height: 110px;
+}
+
+header button {
+width: 23%;
+}
+
+/* MISJA */
+p.pain {
+  font-size: 25px;
+}
+
+.squer .item:nth-of-type(1):hover {
+  background-image: url(../images/pain5.jpg);
+}
+
+p.method {
+  font-size: 25px;
+}
+
+p.life {
+  font-size: 25px;
+}
+
+p.reduction {
+  font-size: 25px;
+}
+
+.item {
+  width: 50vh;
+  height: 50vh;
+}
+
+.first {
+  width: 60vh;
+  height: 60vh;
+  top: 25%;
+  left: -5%;
+}
+
+.second {
+  top: 15%;
+  left: 35%;
+}
+
+.third {
+  top: 26%;
+  left: 70%;
+}
+
+.fourth {
+  top: 55%;
+  left: 45.5%;
+}
+
+
+p.method {
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 40%;
+}
+
+p.life {
+  padding-top: 15%;
+  padding-left: 0;
+}
+
+p.reduction {
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 35%;
+}
+
+  /* QOFERTA */
+
+  section.offers {
+    top: 230vh;
+    height: 200vh;
+  }
+
+  .package {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  .offer {
+    height: 90vh;
+    flex-basis: 30%;
+  }
+
+  .bioButton {
+    margin-top: 20%;
+  }
+
+  .keshButton {
+    margin-top: 40%;
+  }
+    /* QCENNIK */
+
+    section.price {
+      top: 335vh;
+      /* height: 320vh; */
+    }
+
+     /* QCONTACT */
+
+     section.contact {
+      top: 480vh;
+      height: 110vh;
+    }
+
+    iframe {
+      height: 80vh;
+      width: 550px;
+      /* margin-top: 5%; */
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1439px) {
+
+  /* OFERTA */
+
+  .bioButton {
+    margin-top: 29%;
+  }
+
+  .keshButton {
+    margin-top: 39%;
+  }
+
+    /* QCENNIK */
+
+    section.price {
+      top: 345vh;
+      /* height: 320vh; */
+    }
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 510vh;
+    height: 115vh;
+  }
+
+}
+
+@media (orientation: landscape) and (min-height: 900px) {
+  /* MISJA */
+p.pain {
+  padding-top: 7%;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 23px;
+}
+
+.item {
+  width: 40vh;
+  height: 40vh;
+}
+
+.first {
+  width: 40vh;
+  height: 40vh;
+  top: 37%;
+  left: 7%;
+}
+
+.second {
+  top: 10%;
+  left: 27%;
+}
+
+.third {
+  top: 10%;
+  left: 67%;
+}
+
+.fourth {
+  top: 37%;
+  left: 47%;
+}
+
+ /* QOFERTA */
+
+ section.offers {
+  top: 200vh;
+  /* height: 200vh; */
+}
+
+  /* QCENNIK */
+
+  section.price {
+    top: 290vh;
+  }
+
+/* QCONTACT */
+
+section.contact {
+  top: 420vh;
+  height: 100vh;
+}
+
+.phoneContact {
+  height: 75vh;
+}
+
+.borderMaps {
+  height: 75vh;
+}
+
+iframe {
+  height: 65vh;
+  width: 490px;
+}
+
+}
+
+@media (orientation: landscape) and (min-height: 1079px) {
+
+    /* MISJA */
+
+    p.reduction {
+      padding-top: 20%;
+      padding-left: 0;
+      padding-right: 35%;
+    }
+
+    p.pain {
+      padding-top: 20%;
+      padding-left: 10%;
+    }
+
+    p.method {
+      padding-top: 20%;
+    }
+    
+    p.life {
+      padding-top: 20%;
+    }
+
+    .first {
+      left: 0%;
+    }
+    
+    .second {
+      left: 23%;
+    }
+    
+    .third {
+      left: 69%;
+    }
+    
+    .fourth {
+      left: 46%;
+    }
+
+  /* QCENNIK */
+
+  section.price {
+    top: 273vh;
+  }
+
+  /* QCONTACT */
+
+section.contact {
+  top: 385vh;
+  height: 75vh;
+}
+
+.phoneContact {
+  height: 60vh;
+}
+
+.borderMaps {
+  height: 60vh;
+}
+
+iframe {
+  height: 55vh;
+  width: 460px;
+}
+
+section.price {
+  height: 190vh;
+}
+
+}
+
+@media (orientation: landscape) and (min-width: 1559px) {
+
+  .bioButton {
+    margin-top: 10.5%;
+  }
+
+  .keshButton {
+    margin-top: 35.5%;
+  }
+
+}
+
+@media (orientation: landscape) and (min-width: 1919px) {
+
+  p.text1 {
+    top: 6%;
+    left: 14%;
+    }
+
+    p.text5 {
+      font-size: 80px;
+    }
+
+    header button {
+      width: 24%;
+      line-height: 60px;
+      padding: 10px 15px;
+      font-size: 40px;
+    }
+
+    /* MISJA */
+
+    h1 {
+      font-size: 35px;
+    }
+
+    .item {
+      width: 50vh;
+      height: 50vh;
+    }
+    
+    .first {
+      left: 0%;
+    }
+
+    .squer .item:nth-of-type(1):hover {
+      background-image: url(../images/pain3.jpg);
+    }
+    
+    .second {
+      left: 23%;
+    }
+    
+    .third {
+      left: 69%;
+    }
+    
+    .fourth {
+      left: 46%;
+    }
+
+    p.reduction {
+      font-size: 30px;
+    }
+
+    p.pain {
+      font-size: 30px;
+    }
+
+    p.method {
+      font-size: 30px;
+    }
+    
+    p.life {
+      font-size: 30px;
+    }
+
+    /* OFERTA */
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p.description {
+      font-size: 25px;
+ }
+
+ .bioButton {
+   margin-top: 27%;
+ }
+
+ /* CENNIK */
+ section.price {
+  top: 293vh;
+}
+
+  /* QCONTACT */
+
+  section.contact {
+    top: 432vh;
+    height: 90vh;
+  }
+
+  .phoneContact {
+    height: 70vh;
+  }
+  
+  .borderMaps {
+    height: 70vh;
+  }
+  
+  iframe {
+    height: 60vh;
+    width: 600px;
+  }
+}
